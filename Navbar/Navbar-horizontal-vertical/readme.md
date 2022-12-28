@@ -1,0 +1,1 @@
+Vertical navbar changes horizontal on bigger screen.

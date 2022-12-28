@@ -1,0 +1,74 @@
+/* ==== GENERAL STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(25,25,25,.97);
+  padding: 1rem;
+}
+
+nav a {
+  font-family: "Space mono";
+  text-align: center;
+  text-decoration: none;
+  color: #f0f0f0;
+  display: block;
+  padding: .4rem 1rem;
+}
+
+nav a:hover {
+  color: #c5c5c5;
+  transition: background-color .5s ease-in-out;
+}
+
+p {
+  font-family: "Space Mono";
+  font-size: 1 rem;
+  padding: 1rem;
+  color: rgba(25,25,25);
+ }
+
+.first {
+   margin-top: 5rem;
+}
+
+.bordered {
+  border: 1px solid #878787;
+  border-radius: 9999px;
+ }
+
+.bordered:hover {
+  color: rgba(25,25,25);
+  background-color: #f0f0f0;
+  transition: background-color .2s ease-in-out;
+}
+
+/* ==== fixed top ==== */
+
+@media (min-width: 768px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  nav a {
+    float: right;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  @media (min-width: 768px) {
+
+  /* Clearfix */
+    nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+ }
