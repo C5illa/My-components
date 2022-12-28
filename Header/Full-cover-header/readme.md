@@ -1,0 +1,1 @@
+Full cover header with centered background picture.
